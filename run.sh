@@ -9,7 +9,7 @@ fi
 
 repo=$1
 
-git clone ${repo} /website
+[[ -e "/website" ]] || git clone ${repo} /website
 cd /website
 
 cabal install
