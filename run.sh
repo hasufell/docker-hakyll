@@ -14,5 +14,5 @@ cd /website
 
 cabal install
 sh -c "while true ; do sleep 600 && git pull --ff-only origin master; done" &
-cabal run site watch
+cabal run site watch --host 0.0.0.0
 
